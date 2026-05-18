@@ -4,3 +4,4 @@ function Home() {
 
 export default Home;
 console.log("Feature branch update");
+console.log("Feature version");
