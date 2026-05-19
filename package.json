@@ -1,0 +1,28 @@
+{
+  "name": "mvp-task-project",
+  "version": "1.0.0",
+  "description": "Навчальний проєкт для лабораторної роботи з GitFlow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest unitTests --testPathIgnorePatterns=tests",
+    "coverage": "jest unitTests --coverage --testPathIgnorePatterns=tests",
+    "test:e2e": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oksi18/mvp-task-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/oksi18/mvp-task-project/issues"
+  },
+  "homepage": "https://github.com/oksi18/mvp-task-project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.0",
+    "jest": "^30.4.2"
+  }
+}
