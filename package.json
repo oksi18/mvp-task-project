@@ -4,7 +4,7 @@
   "description": "Навчальний проєкт для лабораторної роботи з GitFlow.",
   "main": "index.js",
   "scripts": {
-  "dev": "vite",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
@@ -27,6 +27,8 @@
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.9.0",
-    "jest": "^30.4.2"
+    "eslint": "^9.39.4",
+    "jest": "^30.4.2",
+    "vite": "^8.0.13"
   }
 }
