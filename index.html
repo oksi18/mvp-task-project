@@ -1,13 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MVP Task Project</title>
+  <title>UniDone</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4338ca;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: gray;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>MVP Task Project</h1>
+
+  <header>
+    <h1>UniDone</h1>
+    <p>Student Deadline Manager</p>
+  </header>
+
+  <div class="container">
+    <h2>Додати завдання</h2>
+
+    <form>
+      <label for="subject">Назва предмету</label>
+      <input type="text" id="subject" placeholder="Наприклад: Управління ІТ-проєктами">
+
+      <label for="type">Тип роботи</label>
+      <select id="type">
+        <option>Лабораторна</option>
+        <option>Практична</option>
+        <option>Курсова</option>
+        <option>Домашнє завдання</option>
+      </select>
+
+      <label for="deadline">Дата дедлайну</label>
+      <input type="date" id="deadline">
+
+      <button type="submit">Додати завдання</button>
+    </form>
+  </div>
+
+  <footer>
+    UniDone © 2026
+  </footer>
 
   <script type="module" src="/src/main.js"></script>
+
 </body>
 </html>
