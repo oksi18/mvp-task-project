@@ -1,7 +1,8 @@
-# MVP Task Project
+[![CI/CD Pipeline](https://github.com/oksi18/mvp-task-project/actions/workflows/main.yml/badge.svg)](https://github.com/oksi18/mvp-task-project/actions/workflows/main.yml)
+# UniDone
 
 ## Опис
-Навчальний проєкт для лабораторної роботи з GitFlow.
+Student Deadline Manager
 
 ## Технології
 - HTML
@@ -14,3 +15,6 @@
 npm install
 npm run dev
 ```
+
+## Production URL
+https://mvp-task-project.vercel.app
