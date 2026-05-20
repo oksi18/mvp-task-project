@@ -1,37 +1,55 @@
+# Назва workflow, яка відображається у вкладці GitHub Actions
 name: CI/CD Pipeline
 
+# Тригери запуску workflow
 on:
+  # Запуск після push у main або develop
   push:
     branches:
       - main
       - develop
 
+  # Запуск при створенні або оновленні Pull Request
   pull_request:
     branches:
       - main
       - develop
 
+# Секція із завданнями
 jobs:
+
+  # Основне завдання для перевірки та збірки проєкту
   build-and-test:
+
+    # Використання віртуальної машини Ubuntu
     runs-on: ubuntu-latest
 
+    # Послідовність кроків
     steps:
+
+      # Завантаження коду репозиторію
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Встановлення Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
+          # Вказана версія Node.js
           node-version: 22
 
+      # Встановлення залежностей із package.json
       - name: Install dependencies
         run: npm install
 
+      # Запуск ESLint для перевірки якості коду
       - name: Run ESLint
         run: npm run lint
 
+      # Запуск Unit-тестів через Jest
       - name: Run Unit Tests
         run: npm test
 
+      # Створення production build через Vite
       - name: Build Project
         run: npm run build
